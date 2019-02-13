@@ -9,6 +9,13 @@ path.link {
   stroke-width: 0.5px;
 }
 
+.pin {
+  fill: deeppink;
+  stroke: #fff;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
 .grnline {
   fill: none;
   stroke: green;
@@ -346,11 +353,16 @@ var node = svg.selectAll(".node")
 //     });
 //var node_degrees = [];
 
-node.on("dblclick",function(d){ 
+//node.on("dblclick",function(d){ 
 
-	d.fixed = true;
+	//d.fixed = true;
+//	d.class = 'pinned';
 	
- });
+// });
+ 
+ 
+ 
+ 
 
 node.append("circle")
    .attr("r", function(d) {      
@@ -361,7 +373,22 @@ node.append("circle")
      var minRadius = 2;
      //console.log(d.weight);
      return minRadius + (d.weight * 2);
-   });
+   }).on("dblclick", function(d){
+        if(d.fixed == true ){
+            d.fixed = false;
+            d3.select(this).attr("class", "circle");
+        }
+        else {
+            d.fixed = true;
+            d3.select(this).attr("class", "pin");
+        }
+    });
+//add lable
+//node.append("svg:text")
+//    .text(function(d){
+//        return d.name;
+//    });
+	
 
 
 // node labels
