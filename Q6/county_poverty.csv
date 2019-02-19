@@ -1,320 +1,320 @@
-CensusId,State,County,Poverty
-01001,Alabama,Autauga,5.86
-01003,Alabama,Baldwin,6.09
-01005,Alabama,Barbour,12.14
-01007,Alabama,Bibb,7.64
-01009,Alabama,Blount,7.59
-01011,Alabama,Bullock,11.18
-01013,Alabama,Butler,11.55
-01015,Alabama,Calhoun,9.32
-01017,Alabama,Chambers,9.82
-01019,Alabama,Cherokee,8.73
-01021,Alabama,Chilton,8.68
-01023,Alabama,Choctaw,10.64
-01025,Alabama,Clarke,11.23
-01027,Alabama,Clay,7.59
-01029,Alabama,Cleburne,7.73
-01031,Alabama,Coffee,7.77
-01033,Alabama,Colbert,7.91
-01035,Alabama,Conecuh,15.36
-01037,Alabama,Coosa,8.77
-01039,Alabama,Covington,9.18
-01041,Alabama,Crenshaw,7.59
-01043,Alabama,Cullman,8.41
-01045,Alabama,Dale,8.68
-01047,Alabama,Dallas,15.91
-01049,Alabama,DeKalb,8.5
-01051,Alabama,Elmore,6.18
-01053,Alabama,Escambia,11
-01055,Alabama,Etowah,8.95
-01057,Alabama,Fayette,8.32
-01059,Alabama,Franklin,10.23
-01061,Alabama,Geneva,10.55
-01063,Alabama,Greene,18.27
-01065,Alabama,Hale,12.18
-01067,Alabama,Henry,7.09
-01069,Alabama,Houston,8.32
-01071,Alabama,Jackson,8.18
-01073,Alabama,Jefferson,8.55
-01075,Alabama,Lamar,10.95
-01077,Alabama,Lauderdale,8.14
-01079,Alabama,Lawrence,8.5
-01081,Alabama,Lee,10.82
-01083,Alabama,Limestone,6.5
-01085,Alabama,Lowndes,12.95
-01087,Alabama,Macon,11.77
-01089,Alabama,Madison,6.23
-01091,Alabama,Marengo,11.86
-01093,Alabama,Marion,9.14
-01095,Alabama,Marshall,9.18
-01097,Alabama,Mobile,8.77
-01099,Alabama,Monroe,14.27
-01101,Alabama,Montgomery,10.27
-01103,Alabama,Morgan,7.32
-01105,Alabama,Perry,16.55
-01107,Alabama,Pickens,11.36
-01109,Alabama,Pike,11.86
-01111,Alabama,Randolph,9.27
-01113,Alabama,Russell,9.55
-01115,Alabama,St. Clair,7.27
-01117,Alabama,Shelby,3.77
-01119,Alabama,Sumter,19.41
-01121,Alabama,Talladega,10.45
-01123,Alabama,Tallapoosa,10.23
-01125,Alabama,Tuscaloosa,8.68
-01127,Alabama,Walker,10.23
-01129,Alabama,Washington,8.68
-01131,Alabama,Wilcox,17.14
-01133,Alabama,Winston,9.95
-02013,Alaska,Aleutians East Borough,7.64
-02016,Alaska,Aleutians West Census Area,4.14
-02020,Alaska,Anchorage Municipality,3.73
-02050,Alaska,Bethel Census Area,11.45
-02060,Alaska,Bristol Bay Borough,3.27
-02068,Alaska,Denali Borough,5.77
-02070,Alaska,Dillingham Census Area,8.23
-02090,Alaska,Fairbanks North Star Borough,3.68
-02100,Alaska,Haines Borough,2.41
-02105,Alaska,Hoonah-Angoon Census Area,5.41
-02110,Alaska,Juneau City and Borough,3
-02122,Alaska,Kenai Peninsula Borough,4.55
-02130,Alaska,Ketchikan Gateway Borough,5.5
-02150,Alaska,Kodiak Island Borough,5.14
-02158,Alaska,Kusilvak Census Area,15.14
-02164,Alaska,Lake and Peninsula Borough,7.64
-02170,Alaska,Matanuska-Susitna Borough,4.55
-02180,Alaska,Nome Census Area,12.27
-02185,Alaska,North Slope Borough,4.64
-02188,Alaska,Northwest Arctic Borough,10.82
-02195,Alaska,Petersburg Borough,4.64
-02198,Alaska,Prince of Wales-Hyder Census Area,6.64
-02220,Alaska,Sitka City and Borough,4.09
-02230,Alaska,Skagway Municipality,2
-02240,Alaska,Southeast Fairbanks Census Area,6.59
-02261,Alaska,Valdez-Cordova Census Area,4.95
-02275,Alaska,Wrangell City and Borough,5.36
-02282,Alaska,Yakutat City and Borough,2.45
-02290,Alaska,Yukon-Koyukuk Census Area,10.18
-04001,Arizona,Apache,16.64
-04003,Arizona,Cochise,8.14
-04005,Arizona,Coconino,10.32
-04007,Arizona,Gila,10.32
-04009,Arizona,Graham,10.27
-04011,Arizona,Greenlee,6.23
-04012,Arizona,La Paz,8.68
-04013,Arizona,Maricopa,7.73
-04015,Arizona,Mohave,9
-04017,Arizona,Navajo,13.91
-04019,Arizona,Pima,8.77
-04021,Arizona,Pinal,7.86
-04023,Arizona,Santa Cruz,10.68
-04025,Arizona,Yavapai,7.27
-04027,Arizona,Yuma,9.41
-05001,Arkansas,Arkansas,9.14
-05003,Arkansas,Ashley,9.41
-05005,Arkansas,Baxter,7.23
-05007,Arkansas,Benton,5.55
-05009,Arkansas,Boone,8.05
-05011,Arkansas,Bradley,13.18
-05013,Arkansas,Calhoun,8.09
-05015,Arkansas,Carroll,8.32
-05017,Arkansas,Chicot,14.41
-05019,Arkansas,Clark,10.77
-05021,Arkansas,Clay,9.91
-05023,Arkansas,Cleburne,6.59
-05025,Arkansas,Cleveland,9.45
-05027,Arkansas,Columbia,11.64
-05029,Arkansas,Conway,10.27
-05031,Arkansas,Craighead,9.18
-05033,Arkansas,Crawford,8.41
-05035,Arkansas,Crittenden,10.95
-05037,Arkansas,Cross,9.14
-05039,Arkansas,Dallas,7.05
-05041,Arkansas,Desha,15
-05043,Arkansas,Drew,13
-05045,Arkansas,Faulkner,7.05
-05047,Arkansas,Franklin,10
-05049,Arkansas,Fulton,9.05
-05051,Arkansas,Garland,9.5
-05053,Arkansas,Grant,5.45
-05055,Arkansas,Greene,8.09
-05057,Arkansas,Hempstead,12.27
-05059,Arkansas,Hot Spring,8.68
-05061,Arkansas,Howard,9.91
-05063,Arkansas,Independence,9.91
-05065,Arkansas,Izard,9.55
-05067,Arkansas,Jackson,12.18
-05069,Arkansas,Jefferson,11.59
-05071,Arkansas,Johnson,10.05
-05073,Arkansas,Lafayette,11.09
-05075,Arkansas,Lawrence,10.86
-05077,Arkansas,Lee,12.41
-05079,Arkansas,Lincoln,10.45
-05081,Arkansas,Little River,8.77
-05083,Arkansas,Logan,8.77
-05085,Arkansas,Lonoke,5.64
-05087,Arkansas,Madison,9.32
-05089,Arkansas,Marion,8.55
-05091,Arkansas,Miller,9.23
-05093,Arkansas,Mississippi,12.18
-05095,Arkansas,Monroe,14.91
-05097,Arkansas,Montgomery,8.14
-05099,Arkansas,Nevada,12.77
-05101,Arkansas,Newton,9.32
-05103,Arkansas,Ouachita,10.95
-05105,Arkansas,Perry,7.27
-05107,Arkansas,Phillips,15.5
-05109,Arkansas,Pike,9.18
-05111,Arkansas,Poinsett,10.36
-05113,Arkansas,Polk,10.95
-05115,Arkansas,Pope,9.09
-05117,Arkansas,Prairie,9.73
-05119,Arkansas,Pulaski,8
-05121,Arkansas,Randolph,9.59
-05123,Arkansas,St. Francis,11.27
-05125,Arkansas,Saline,4.14
-05127,Arkansas,Scott,9.14
-05129,Arkansas,Searcy,10.73
-05131,Arkansas,Sebastian,10.55
-05133,Arkansas,Sevier,10.05
-05135,Arkansas,Sharp,10.73
-05137,Arkansas,Stone,11.18
-05139,Arkansas,Union,9.27
-05141,Arkansas,Van Buren,9.73
-05143,Arkansas,Washington,9.14
-05145,Arkansas,White,8.64
-05147,Arkansas,Woodruff,10.68
-05149,Arkansas,Yell,8.45
-06001,California,Alameda,5.68
-06003,California,Alpine,7.95
-06005,California,Amador,5.82
-06007,California,Butte,9.95
-06009,California,Calaveras,5.73
-06011,California,Colusa,6.82
-06013,California,Contra Costa,4.95
-06015,California,Del Norte,9.91
-06017,California,El Dorado,4.73
-06019,California,Fresno,12.18
-06021,California,Glenn,9.45
-06023,California,Humboldt,9.73
-06025,California,Imperial,10.91
-06027,California,Inyo,5.18
-06029,California,Kern,10.68
-06031,California,Kings,10.27
-06033,California,Lake,11.23
-06035,California,Lassen,7.45
-06037,California,Los Angeles,8.27
-06039,California,Madera,10.68
-06041,California,Marin,3.77
-06043,California,Mariposa,6.86
-06045,California,Mendocino,9.27
-06047,California,Merced,11.86
-06049,California,Modoc,8.55
-06051,California,Mono,2.23
-06053,California,Monterey,7.73
-06055,California,Napa,4.68
-06057,California,Nevada,5.77
-06059,California,Orange,5.82
-06061,California,Placer,4.05
-06063,California,Plumas,6.59
-06065,California,Riverside,7.64
-06067,California,Sacramento,8.27
-06069,California,San Benito,4.91
-06071,California,San Bernardino,8.86
-06073,California,San Diego,6.59
-06075,California,San Francisco,6
-06077,California,San Joaquin,8.45
-06079,California,San Luis Obispo,6.73
-06081,California,San Mateo,3.64
-06083,California,Santa Barbara,7.41
-06085,California,Santa Clara,4.32
-06087,California,Santa Cruz,6.86
-06089,California,Shasta,8.18
-06091,California,Sierra,6.64
-06093,California,Siskiyou,10.5
-06095,California,Solano,6.09
-06097,California,Sonoma,5.32
-06099,California,Stanislaus,9.23
-06101,California,Sutter,8.09
-06103,California,Tehama,9
-06105,California,Trinity,8.86
-06107,California,Tulare,12.77
-06109,California,Tuolumne,6.32
-06111,California,Ventura,5.05
-06113,California,Yolo,9.05
-06115,California,Yuba,9.95
-08001,Colorado,Adams,6.27
-08003,Colorado,Alamosa,13.14
-08005,Colorado,Arapahoe,5.09
-08007,Colorado,Archuleta,5.32
-08009,Colorado,Baca,9.32
-08011,Colorado,Bent,11.64
-08013,Colorado,Boulder,6.41
-08014,Colorado,Broomfield,2.95
-08015,Colorado,Chaffee,3.95
-08017,Colorado,Cheyenne,3.91
-08019,Colorado,Clear Creek,3.77
-08021,Colorado,Conejos,8.32
-08023,Colorado,Costilla,10.77
-08025,Colorado,Crowley,15.18
-08027,Colorado,Custer,7.91
-08029,Colorado,Delta,7.41
-08031,Colorado,Denver,7.86
-08033,Colorado,Dolores,9.77
-08035,Colorado,Douglas,1.82
-08037,Colorado,Eagle,4.18
-08039,Colorado,Elbert,3.18
-08041,Colorado,El Paso,5.36
-08043,Colorado,Fremont,7.91
-08045,Colorado,Garfield,5.5
-08047,Colorado,Gilpin,3.36
-08049,Colorado,Grand,4.91
-08051,Colorado,Gunnison,7.68
-08053,Colorado,Hinsdale,3.64
-08055,Colorado,Huerfano,8.41
-08057,Colorado,Jackson,5.32
-08059,Colorado,Jefferson,3.86
-08061,Colorado,Kiowa,6
-08063,Colorado,Kit Carson,7.45
-08065,Colorado,Lake,5.23
-08067,Colorado,La Plata,4.82
-08069,Colorado,Larimer,6.23
-08071,Colorado,Las Animas,6.77
-08073,Colorado,Lincoln,7.55
-08075,Colorado,Logan,7.68
-08077,Colorado,Mesa,7.09
-08079,Colorado,Mineral,3.45
-08081,Colorado,Moffat,5.18
-08083,Colorado,Montezuma,8.14
-08085,Colorado,Montrose,8.64
-08087,Colorado,Morgan,5.27
-08089,Colorado,Otero,11.05
-08091,Colorado,Ouray,3.55
-08093,Colorado,Park,3.32
-08095,Colorado,Phillips,6.95
-08097,Colorado,Pitkin,4.5
-08099,Colorado,Prowers,8.64
-08101,Colorado,Pueblo,9
-08103,Colorado,Rio Blanco,7.91
-08105,Colorado,Rio Grande,8.73
-08107,Colorado,Routt,4.64
-08109,Colorado,Saguache,10.64
-08111,Colorado,San Juan,7.5
-08113,Colorado,San Miguel,5.09
-08115,Colorado,Sedgwick,6.55
-08117,Colorado,Summit,6.23
-08119,Colorado,Teller,3.41
-08121,Colorado,Washington,4.73
-08123,Colorado,Weld,5.86
-08125,Colorado,Yuma,6.59
-09001,Connecticut,Fairfield,4.09
-09003,Connecticut,Hartford,5.41
-09005,Connecticut,Litchfield,3.18
-09007,Connecticut,Middlesex,3.05
-09009,Connecticut,New Haven,5.91
-09011,Connecticut,New London,4.5
-09013,Connecticut,Tolland,3.18
-09015,Connecticut,Windham,4.86
+id,State,County,Poverty
+1001,Alabama,Autauga,5.86
+1003,Alabama,Baldwin,6.09
+1005,Alabama,Barbour,12.14
+1007,Alabama,Bibb,7.64
+1009,Alabama,Blount,7.59
+1011,Alabama,Bullock,11.18
+1013,Alabama,Butler,11.55
+1015,Alabama,Calhoun,9.32
+1017,Alabama,Chambers,9.82
+1019,Alabama,Cherokee,8.73
+1021,Alabama,Chilton,8.68
+1023,Alabama,Choctaw,10.64
+1025,Alabama,Clarke,11.23
+1027,Alabama,Clay,7.59
+1029,Alabama,Cleburne,7.73
+1031,Alabama,Coffee,7.77
+1033,Alabama,Colbert,7.91
+1035,Alabama,Conecuh,15.36
+1037,Alabama,Coosa,8.77
+1039,Alabama,Covington,9.18
+1041,Alabama,Crenshaw,7.59
+1043,Alabama,Cullman,8.41
+1045,Alabama,Dale,8.68
+1047,Alabama,Dallas,15.91
+1049,Alabama,DeKalb,8.5
+1051,Alabama,Elmore,6.18
+1053,Alabama,Escambia,11
+1055,Alabama,Etowah,8.95
+1057,Alabama,Fayette,8.32
+1059,Alabama,Franklin,10.23
+1061,Alabama,Geneva,10.55
+1063,Alabama,Greene,18.27
+1065,Alabama,Hale,12.18
+1067,Alabama,Henry,7.09
+1069,Alabama,Houston,8.32
+1071,Alabama,Jackson,8.18
+1073,Alabama,Jefferson,8.55
+1075,Alabama,Lamar,10.95
+1077,Alabama,Lauderdale,8.14
+1079,Alabama,Lawrence,8.5
+1081,Alabama,Lee,10.82
+1083,Alabama,Limestone,6.5
+1085,Alabama,Lowndes,12.95
+1087,Alabama,Macon,11.77
+1089,Alabama,Madison,6.23
+1091,Alabama,Marengo,11.86
+1093,Alabama,Marion,9.14
+1095,Alabama,Marshall,9.18
+1097,Alabama,Mobile,8.77
+1099,Alabama,Monroe,14.27
+1101,Alabama,Montgomery,10.27
+1103,Alabama,Morgan,7.32
+1105,Alabama,Perry,16.55
+1107,Alabama,Pickens,11.36
+1109,Alabama,Pike,11.86
+1111,Alabama,Randolph,9.27
+1113,Alabama,Russell,9.55
+1115,Alabama,St. Clair,7.27
+1117,Alabama,Shelby,3.77
+1119,Alabama,Sumter,19.41
+1121,Alabama,Talladega,10.45
+1123,Alabama,Tallapoosa,10.23
+1125,Alabama,Tuscaloosa,8.68
+1127,Alabama,Walker,10.23
+1129,Alabama,Washington,8.68
+1131,Alabama,Wilcox,17.14
+1133,Alabama,Winston,9.95
+2013,Alaska,Aleutians East Borough,7.64
+2016,Alaska,Aleutians West Census Area,4.14
+2020,Alaska,Anchorage Municipality,3.73
+2050,Alaska,Bethel Census Area,11.45
+2060,Alaska,Bristol Bay Borough,3.27
+2068,Alaska,Denali Borough,5.77
+2070,Alaska,Dillingham Census Area,8.23
+2090,Alaska,Fairbanks North Star Borough,3.68
+2100,Alaska,Haines Borough,2.41
+2105,Alaska,Hoonah-Angoon Census Area,5.41
+2110,Alaska,Juneau City and Borough,3
+2122,Alaska,Kenai Peninsula Borough,4.55
+2130,Alaska,Ketchikan Gateway Borough,5.5
+2150,Alaska,Kodiak Island Borough,5.14
+2158,Alaska,Kusilvak Census Area,15.14
+2164,Alaska,Lake and Peninsula Borough,7.64
+2170,Alaska,Matanuska-Susitna Borough,4.55
+2180,Alaska,Nome Census Area,12.27
+2185,Alaska,North Slope Borough,4.64
+2188,Alaska,Northwest Arctic Borough,10.82
+2195,Alaska,Petersburg Borough,4.64
+2198,Alaska,Prince of Wales-Hyder Census Area,6.64
+2220,Alaska,Sitka City and Borough,4.09
+2230,Alaska,Skagway Municipality,2
+2240,Alaska,Southeast Fairbanks Census Area,6.59
+2261,Alaska,Valdez-Cordova Census Area,4.95
+2275,Alaska,Wrangell City and Borough,5.36
+2282,Alaska,Yakutat City and Borough,2.45
+2290,Alaska,Yukon-Koyukuk Census Area,10.18
+4001,Arizona,Apache,16.64
+4003,Arizona,Cochise,8.14
+4005,Arizona,Coconino,10.32
+4007,Arizona,Gila,10.32
+4009,Arizona,Graham,10.27
+4011,Arizona,Greenlee,6.23
+4012,Arizona,La Paz,8.68
+4013,Arizona,Maricopa,7.73
+4015,Arizona,Mohave,9
+4017,Arizona,Navajo,13.91
+4019,Arizona,Pima,8.77
+4021,Arizona,Pinal,7.86
+4023,Arizona,Santa Cruz,10.68
+4025,Arizona,Yavapai,7.27
+4027,Arizona,Yuma,9.41
+5001,Arkansas,Arkansas,9.14
+5003,Arkansas,Ashley,9.41
+5005,Arkansas,Baxter,7.23
+5007,Arkansas,Benton,5.55
+5009,Arkansas,Boone,8.05
+5011,Arkansas,Bradley,13.18
+5013,Arkansas,Calhoun,8.09
+5015,Arkansas,Carroll,8.32
+5017,Arkansas,Chicot,14.41
+5019,Arkansas,Clark,10.77
+5021,Arkansas,Clay,9.91
+5023,Arkansas,Cleburne,6.59
+5025,Arkansas,Cleveland,9.45
+5027,Arkansas,Columbia,11.64
+5029,Arkansas,Conway,10.27
+5031,Arkansas,Craighead,9.18
+5033,Arkansas,Crawford,8.41
+5035,Arkansas,Crittenden,10.95
+5037,Arkansas,Cross,9.14
+5039,Arkansas,Dallas,7.05
+5041,Arkansas,Desha,15
+5043,Arkansas,Drew,13
+5045,Arkansas,Faulkner,7.05
+5047,Arkansas,Franklin,10
+5049,Arkansas,Fulton,9.05
+5051,Arkansas,Garland,9.5
+5053,Arkansas,Grant,5.45
+5055,Arkansas,Greene,8.09
+5057,Arkansas,Hempstead,12.27
+5059,Arkansas,Hot Spring,8.68
+5061,Arkansas,Howard,9.91
+5063,Arkansas,Independence,9.91
+5065,Arkansas,Izard,9.55
+5067,Arkansas,Jackson,12.18
+5069,Arkansas,Jefferson,11.59
+5071,Arkansas,Johnson,10.05
+5073,Arkansas,Lafayette,11.09
+5075,Arkansas,Lawrence,10.86
+5077,Arkansas,Lee,12.41
+5079,Arkansas,Lincoln,10.45
+5081,Arkansas,Little River,8.77
+5083,Arkansas,Logan,8.77
+5085,Arkansas,Lonoke,5.64
+5087,Arkansas,Madison,9.32
+5089,Arkansas,Marion,8.55
+5091,Arkansas,Miller,9.23
+5093,Arkansas,Mississippi,12.18
+5095,Arkansas,Monroe,14.91
+5097,Arkansas,Montgomery,8.14
+5099,Arkansas,Nevada,12.77
+5101,Arkansas,Newton,9.32
+5103,Arkansas,Ouachita,10.95
+5105,Arkansas,Perry,7.27
+5107,Arkansas,Phillips,15.5
+5109,Arkansas,Pike,9.18
+5111,Arkansas,Poinsett,10.36
+5113,Arkansas,Polk,10.95
+5115,Arkansas,Pope,9.09
+5117,Arkansas,Prairie,9.73
+5119,Arkansas,Pulaski,8
+5121,Arkansas,Randolph,9.59
+5123,Arkansas,St. Francis,11.27
+5125,Arkansas,Saline,4.14
+5127,Arkansas,Scott,9.14
+5129,Arkansas,Searcy,10.73
+5131,Arkansas,Sebastian,10.55
+5133,Arkansas,Sevier,10.05
+5135,Arkansas,Sharp,10.73
+5137,Arkansas,Stone,11.18
+5139,Arkansas,Union,9.27
+5141,Arkansas,Van Buren,9.73
+5143,Arkansas,Washington,9.14
+5145,Arkansas,White,8.64
+5147,Arkansas,Woodruff,10.68
+5149,Arkansas,Yell,8.45
+6001,California,Alameda,5.68
+6003,California,Alpine,7.95
+6005,California,Amador,5.82
+6007,California,Butte,9.95
+6009,California,Calaveras,5.73
+6011,California,Colusa,6.82
+6013,California,Contra Costa,4.95
+6015,California,Del Norte,9.91
+6017,California,El Dorado,4.73
+6019,California,Fresno,12.18
+6021,California,Glenn,9.45
+6023,California,Humboldt,9.73
+6025,California,Imperial,10.91
+6027,California,Inyo,5.18
+6029,California,Kern,10.68
+6031,California,Kings,10.27
+6033,California,Lake,11.23
+6035,California,Lassen,7.45
+6037,California,Los Angeles,8.27
+6039,California,Madera,10.68
+6041,California,Marin,3.77
+6043,California,Mariposa,6.86
+6045,California,Mendocino,9.27
+6047,California,Merced,11.86
+6049,California,Modoc,8.55
+6051,California,Mono,2.23
+6053,California,Monterey,7.73
+6055,California,Napa,4.68
+6057,California,Nevada,5.77
+6059,California,Orange,5.82
+6061,California,Placer,4.05
+6063,California,Plumas,6.59
+6065,California,Riverside,7.64
+6067,California,Sacramento,8.27
+6069,California,San Benito,4.91
+6071,California,San Bernardino,8.86
+6073,California,San Diego,6.59
+6075,California,San Francisco,6
+6077,California,San Joaquin,8.45
+6079,California,San Luis Obispo,6.73
+6081,California,San Mateo,3.64
+6083,California,Santa Barbara,7.41
+6085,California,Santa Clara,4.32
+6087,California,Santa Cruz,6.86
+6089,California,Shasta,8.18
+6091,California,Sierra,6.64
+6093,California,Siskiyou,10.5
+6095,California,Solano,6.09
+6097,California,Sonoma,5.32
+6099,California,Stanislaus,9.23
+6101,California,Sutter,8.09
+6103,California,Tehama,9
+6105,California,Trinity,8.86
+6107,California,Tulare,12.77
+6109,California,Tuolumne,6.32
+6111,California,Ventura,5.05
+6113,California,Yolo,9.05
+6115,California,Yuba,9.95
+8001,Colorado,Adams,6.27
+8003,Colorado,Alamosa,13.14
+8005,Colorado,Arapahoe,5.09
+8007,Colorado,Archuleta,5.32
+8009,Colorado,Baca,9.32
+8011,Colorado,Bent,11.64
+8013,Colorado,Boulder,6.41
+8014,Colorado,Broomfield,2.95
+8015,Colorado,Chaffee,3.95
+8017,Colorado,Cheyenne,3.91
+8019,Colorado,Clear Creek,3.77
+8021,Colorado,Conejos,8.32
+8023,Colorado,Costilla,10.77
+8025,Colorado,Crowley,15.18
+8027,Colorado,Custer,7.91
+8029,Colorado,Delta,7.41
+8031,Colorado,Denver,7.86
+8033,Colorado,Dolores,9.77
+8035,Colorado,Douglas,1.82
+8037,Colorado,Eagle,4.18
+8039,Colorado,Elbert,3.18
+8041,Colorado,El Paso,5.36
+8043,Colorado,Fremont,7.91
+8045,Colorado,Garfield,5.5
+8047,Colorado,Gilpin,3.36
+8049,Colorado,Grand,4.91
+8051,Colorado,Gunnison,7.68
+8053,Colorado,Hinsdale,3.64
+8055,Colorado,Huerfano,8.41
+8057,Colorado,Jackson,5.32
+8059,Colorado,Jefferson,3.86
+8061,Colorado,Kiowa,6
+8063,Colorado,Kit Carson,7.45
+8065,Colorado,Lake,5.23
+8067,Colorado,La Plata,4.82
+8069,Colorado,Larimer,6.23
+8071,Colorado,Las Animas,6.77
+8073,Colorado,Lincoln,7.55
+8075,Colorado,Logan,7.68
+8077,Colorado,Mesa,7.09
+8079,Colorado,Mineral,3.45
+8081,Colorado,Moffat,5.18
+8083,Colorado,Montezuma,8.14
+8085,Colorado,Montrose,8.64
+8087,Colorado,Morgan,5.27
+8089,Colorado,Otero,11.05
+8091,Colorado,Ouray,3.55
+8093,Colorado,Park,3.32
+8095,Colorado,Phillips,6.95
+8097,Colorado,Pitkin,4.5
+8099,Colorado,Prowers,8.64
+8101,Colorado,Pueblo,9
+8103,Colorado,Rio Blanco,7.91
+8105,Colorado,Rio Grande,8.73
+8107,Colorado,Routt,4.64
+8109,Colorado,Saguache,10.64
+8111,Colorado,San Juan,7.5
+8113,Colorado,San Miguel,5.09
+8115,Colorado,Sedgwick,6.55
+8117,Colorado,Summit,6.23
+8119,Colorado,Teller,3.41
+8121,Colorado,Washington,4.73
+8123,Colorado,Weld,5.86
+8125,Colorado,Yuma,6.59
+9001,Connecticut,Fairfield,4.09
+9003,Connecticut,Hartford,5.41
+9005,Connecticut,Litchfield,3.18
+9007,Connecticut,Middlesex,3.05
+9009,Connecticut,New Haven,5.91
+9011,Connecticut,New London,4.5
+9013,Connecticut,Tolland,3.18
+9015,Connecticut,Windham,4.86
 10001,Delaware,Kent,6.14
 10003,Delaware,New Castle,5.18
 10005,Delaware,Sussex,5.73

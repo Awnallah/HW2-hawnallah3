@@ -1,15 +1,9 @@
-<!-- 
-
-    Adapted from Mike Bostock at bl.ocks.org
-    https://bl.ocks.org/mbostock/4060606
-
- -->
 
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <title>8.4 - Choropleth maps</title>
+    <title>Poverty Map</title>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -20,9 +14,9 @@
     <nav class="navbar navbar-default"></nav>
     <svg width="960" height="600"></svg>
 
-<script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="//d3js.org/topojson.v2.min.js"></script>
+<script src="../lib/d3.v5.min.js"></script>
+<script src="../lib/d3-scale-chromatic.v1.min.js"></script>
+<script src="../lib/topojson.v2.min.js"></script>
 
 <script>
 
@@ -40,7 +34,7 @@
 
     var color = d3.scaleThreshold()
         .domain(d3.range(2, 10))
-        .range(d3.schemeBlues[9]);
+        .range(d3.schemeGreens[9]);
 
     var g = svg.append("g")
         .attr("class", "key")
@@ -66,7 +60,7 @@
         .attr("fill", "#000")
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
-        .text("Unemployment rate");
+        .text("Poverty Level ");
 
     g.call(d3.axisBottom(x)
         .tickSize(13)
@@ -75,20 +69,22 @@
       .select(".domain")
         .remove();
 
-/*  
-    Before V5
-    d3.queue()
-        .defer(d3.json, "https://d3js.org/us-10m.v1.json")
-        .defer(d3.tsv, "data/map.tsv", function(d) { unemployment.set(d.id, +d.rate); })
-        .await(ready);
-*/    
 
     var promises = [
-      d3.json("https://d3js.org/us-10m.v1.json"),
-      d3.tsv("data/map.tsv",  function(d) { unemployment.set(d.id, +d.rate); })
+      d3.json("us.json"),
+      d3.csv("county_poverty.csv",  function(d) {
+        //console.log(typeof(d.id));
+        if (d.id.length < 5){
+            d.id = "0"+d.id;
+        }
+       unemployment.set(d.id, +d.Poverty); 
+       //console.log(unemployment);
+      })
+
     ]
 
     Promise.all(promises).then(function(data){
+        //console.log(data);
         ready(data[0]);
     }).catch(function(error){
         console.log(error);
@@ -100,10 +96,10 @@
             .selectAll("path")
                 .data(topojson.feature(us, us.objects.counties).features)
             .enter().append("path")
-                .attr("fill", function(d) { return color(d.rate = unemployment.get(d.id)); })
+                .attr("fill", function(d) { return color(d.Poverty = unemployment.get(d.id)); })
                 .attr("d", path)
             .append("title")
-                .text(function(d) { return d.rate + "%"; });
+                .text(function(d) { return d.Poverty + "%"; });
 
         svg.append("path")
             .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
