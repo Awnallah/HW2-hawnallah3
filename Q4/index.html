@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="../lib/d3.v5.min.js"></script>
   <style>
 		html { 
       font-size: 62.5%; 
@@ -41,7 +41,7 @@
 <body>
 <div id="nav-container">
     <div class="nav left">left</div>
-    <div id="locationDropdown"></div>
+    <div id="yearDropdown"></div>
     <div class="nav right">right</div>
 </div>
 <div id="heatmap"></div>
@@ -96,7 +96,7 @@
     .attr("transform", "translate(" + gridSize / 2 + ", -6)");
 
   // load data
-  d3.json("test.json", function(error, data) {
+  d3.json("test.json").then(function(data) {
     data.forEach(function(d) {
         d.day = +d.day;
         d.hour = +d.hour;
@@ -114,10 +114,10 @@
     var currentLocationIndex = 0;
 
     // create location dropdown menu
-    var locationMenu = d3.select("#locationDropdown");
-    locationMenu
+    var yearMenu = d3.select("#yearDropdown");
+    yearMenu
       .append("select")
-      .attr("id", "locationMenu")
+      .attr("id", "yearMenu")
       .selectAll("option")
         .data(locations)
         .enter()
@@ -164,7 +164,7 @@
     }
 
     // run update function when dropdown selection changes
-    locationMenu.on("change", function() {
+    yearMenu.on("change", function() {
       // find which location was selected from the dropdown
       var selectedLocation = d3.select(this)
         .select("select")
@@ -188,9 +188,9 @@
           currentLocationIndex++;  
         }
       }
-      d3.select("#locationMenu").property("value", currentLocationIndex)
+      d3.select("#yearMenu").property("value", currentLocationIndex)
       updateHeatmap(locations[currentLocationIndex]);
     })
-  })
+  });
 </script>
 </body>
