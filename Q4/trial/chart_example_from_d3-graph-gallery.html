@@ -1,11 +1,55 @@
 <!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
+
+<head>
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
 <script src="../../lib/d3.v5.min.js"></script>
+  <style>
+		html { 
+      font-size: 62.5%; 
+    } 
+    
+    body {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      fill: #696969;
+      text-align: center;
+    }
+    
+    .timeLabel, .dayLabel {
+		    font-size: 1.6rem;
+		    fill: #AAAAAA;
+		    font-weight: 300;
+		}
 
-<!-- Create a div where the graph will take place -->
+    #nav-container {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    #nav-container .left {
+      margin-right: 20px;
+    }
+
+    #nav-container .right {
+      margin-left: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+<div id="nav-container">
+    <div class="nav left">left</div>
+    <div id="yearDropdown"></div>
+    <div class="nav right">right</div>
+</div>
+
 <div id="my_dataviz"></div>
 
 
@@ -43,15 +87,6 @@ preData.forEach( function(row) {
       data.push({"Borough": colname ,"Crime Type": row["Crime Type"], "value": row[colname], "Year": row['Year']});
     });
   });
-
-
-
-
-
-
-
-
-      console.log(data);
 
 
 
@@ -105,3 +140,4 @@ var myColor = d3.scaleLinear()
 });
 
 </script>
+</body>
