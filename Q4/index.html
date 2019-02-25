@@ -174,23 +174,23 @@
       updateHeatmap(locations[currentLocationIndex]);
     });    
 
-    d3.selectAll(".nav").on("click", function() {
-      if(d3.select(this).classed("left")) {
-        if(currentLocationIndex == 0) {
-          currentLocationIndex = locations.length-1;
-        } else {
-          currentLocationIndex--;  
-        }
-      } else if(d3.select(this).classed("right")) {
-        if(currentLocationIndex == locations.length-1) {
-          currentLocationIndex = 0;
-        } else {
-          currentLocationIndex++;  
-        }
-      }
-      d3.select("#yearMenu").property("value", currentLocationIndex)
-      updateHeatmap(locations[currentLocationIndex]);
-    })
+    // d3.selectAll(".nav").on("click", function() {
+    //   if(d3.select(this).classed("left")) {
+    //     if(currentLocationIndex == 0) {
+    //       currentLocationIndex = locations.length-1;
+    //     } else {
+    //       currentLocationIndex--;  
+    //     }
+    //   } else if(d3.select(this).classed("right")) {
+    //     if(currentLocationIndex == locations.length-1) {
+    //       currentLocationIndex = 0;
+    //     } else {
+    //       currentLocationIndex++;  
+    //     }
+    //   }
+    //   d3.select("#yearMenu").property("value", currentLocationIndex)
+    //   updateHeatmap(locations[currentLocationIndex]);
+    // })
   });
 </script>
 </body>

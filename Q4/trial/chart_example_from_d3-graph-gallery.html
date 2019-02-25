@@ -1,6 +1,8 @@
 <!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
 
+
+
 <head>
 <meta charset="utf-8">
 
@@ -12,7 +14,7 @@
     } 
     
     body {
-      margin-top: 30px;
+      margin-top: 10px;
       font-size: 1.4rem;
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 400;
@@ -20,45 +22,37 @@
       text-align: center;
     }
     
-    .timeLabel, .dayLabel {
-		    font-size: 1.6rem;
-		    fill: #AAAAAA;
-		    font-weight: 300;
-		}
 
     #nav-container {
       display: flex;
       justify-content: center;
       cursor: pointer;
+      margin-bottom: 0;
     }
 
-    #nav-container .left {
-      margin-right: 20px;
-    }
-
-    #nav-container .right {
-      margin-left: 20px;
-    }
   </style>
-
+   <h3> Crime Heatmap</h3>
 </head>
 
 <body>
+ 
 <div id="nav-container">
-    <div class="nav left">left</div>
+
     <div id="yearDropdown"></div>
-    <div class="nav right">right</div>
+  
 </div>
 
 <div id="my_dataviz"></div>
+<!-- <div id="my_legend"> </div> -->
 
 
 <script>
 
+var dataset;
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom: 30, left: 120},
+var margin = {top: 30, right: 30, bottom: 30, left: 60},
   width = 450 - margin.left - margin.right,
-  height = 450 - margin.top - margin.bottom;
+  height = 300 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -102,6 +96,31 @@ data.forEach(function(item){
 
 });
 
+crimeList.sort();
+boroughList.sort();
+
+
+dataset = data;
+
+// array of years in the data
+var nest = d3.nest()
+      .key(function(d) { return d.Year; })
+      .entries(dataset);
+
+
+var years = nest.map(function(d) { return d.key; });
+var currentYearIndex = 0;
+
+
+var yearMenu = d3.select("#yearDropdown");
+    yearMenu.append("select")
+      .attr("id", "yearMenu")
+      .selectAll("option")
+        .data(years)
+        .enter()
+        .append("option")
+        .attr("value", function(d, i) { return i; })
+        .text(function(d) { return d; });
 
 // Build X scales and axis:
 var x = d3.scaleBand()
@@ -122,20 +141,66 @@ svg.append("g")
 
 // Build color scale
 var myColor = d3.scaleLinear()
-  .range(["white", "red"])
+  .range(["#e7e1ef", "#dd1c77"])
   .domain([1,100])
 
 
+var drawHmap = function(year){
 
-  svg.selectAll()
-      .data(data, function(d) {return d["Crime Type"]+':'+d["Borough"];})
+  var yearData = nest.find(function(d){return d.key == year;});
+
+  var heatmap = svg.selectAll(".sqr")
+      .data(yearData.values, function(d) {return d["Crime Type"]+':'+d["Borough"];})
       .enter()
       .append("rect")
       .attr("x", function(d) { return x(d["Crime Type"]) })
       .attr("y", function(d) { return y(d["Borough"]) })
+      .attr("class", "sqr bordered")
       .attr("width", x.bandwidth() )
       .attr("height", y.bandwidth() )
       .style("fill", function(d) { return myColor(d.value)} )
+
+
+      console.log(yearData.values);
+
+  // var legend = svg.append("g")
+  //           .attr("class", "legend")
+  //           .attr("transform", "translate(0,-300)")
+  //           .selectAll(".legendElement")
+  //           .data([0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
+  //           .enter().append("g")
+  //           .attr("class", "legendElement");
+
+
+}
+
+drawHmap(years[currentYearIndex]);
+
+
+var updateHmap = function(year){
+
+  console.log(years[currentYearIndex], year);
+
+  var yearData = nest.find(function(d){return d.key == year;});
+  console.log(yearData);
+  var heatmap = svg.selectAll(".sqr")
+      .data(yearData.values, function(d) {return d["Crime Type"]+':'+d["Borough"];})
+      .transition()
+      .duration(500)
+      .style("fill", function(d) { return myColor(d.value)} )
+}
+
+    yearMenu.on("change", function() {
+      // find which year selected from the dropdown
+      var selectedyear = d3.select(this)
+        .select("select")
+        .property("value");
+      currentYearIndex = +selectedyear;
+      // run update function with selected year
+      updateHmap(years[currentYearIndex]);
+    });
+
+
 
 });
 

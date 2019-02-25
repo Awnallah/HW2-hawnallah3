@@ -24,7 +24,7 @@
         width = +svg.attr("width"),
         height = +svg.attr("height");
 
-    var unemployment = d3.map();
+    var povertyMap = d3.map();
 
     var path = d3.geoPath();
 
@@ -77,8 +77,8 @@
         if (d.id.length < 5){
             d.id = "0"+d.id;
         }
-       unemployment.set(d.id, +d.Poverty); 
-       //console.log(unemployment);
+       povertyMap.set(d.id, +d.Poverty); 
+       //console.log(povertyMap);
       })
 
     ]
@@ -96,7 +96,7 @@
             .selectAll("path")
                 .data(topojson.feature(us, us.objects.counties).features)
             .enter().append("path")
-                .attr("fill", function(d) { return color(d.Poverty = unemployment.get(d.id)); })
+                .attr("fill", function(d) { return color(d.Poverty = povertyMap.get(d.id)); })
                 .attr("d", path)
             .append("title")
                 .text(function(d) { return d.Poverty + "%"; });
