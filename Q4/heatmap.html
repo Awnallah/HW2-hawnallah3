@@ -7,7 +7,8 @@
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
-<script src="../../lib/d3.v5.min.js"></script>
+<script src="../lib/d3.v5.min.js"></script>
+<!-- <script src="d3-legend.min.js"></script> -->
   <style>
 		html { 
       font-size: 62.5%; 
@@ -50,9 +51,11 @@
 
 var dataset;
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom: 30, left: 60},
+var margin = {top: 30, right: 30, bottom: 100, left: 60},
   width = 450 - margin.left - margin.right,
   height = 300 - margin.top - margin.bottom;
+
+
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -63,8 +66,13 @@ var svg = d3.select("#my_dataviz")
   .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
+
+  function sortNumber(a,b) {
+        return a - b;
+    }
+
 //Read the data
-d3.csv("../heatmap.csv").then( function(preData) {
+d3.csv("heatmap.csv").then( function(preData) {
 
 var data = [];
 
@@ -78,7 +86,7 @@ preData.forEach( function(row) {
       if(colname == "Crime Type" || colname == "Year") {
         return
       }
-      data.push({"Borough": colname ,"Crime Type": row["Crime Type"], "value": row[colname], "Year": row['Year']});
+      data.push({"Borough": colname ,"Crime Type": row["Crime Type"], "value": +row[colname], "Year": row['Year']});
     });
   });
 
@@ -139,15 +147,20 @@ var y = d3.scaleBand()
 svg.append("g")
   .call(d3.axisLeft(y));
 
-// Build color scale
-var myColor = d3.scaleLinear()
-  .range(["#e7e1ef", "#dd1c77"])
-  .domain([1,100])
-
+// var myColor = d3.scaleLinear()
+//   .range(["#e7e1ef", "#dd1c77"])
+//   .domain([1,100]);
 
 var drawHmap = function(year){
 
   var yearData = nest.find(function(d){return d.key == year;});
+
+  //console.log(d3.max(yearData.values,function(d) { return +d.value;}));
+  //Build color scale
+var myColor = d3.scaleLinear()
+  .range(["#efe1ef", "#bf06e0"])
+  .domain([1,d3.max(yearData.values,function(d) { return +d.value; })]);
+
 
   var heatmap = svg.selectAll(".sqr")
       .data(yearData.values, function(d) {return d["Crime Type"]+':'+d["Borough"];})
@@ -160,16 +173,43 @@ var drawHmap = function(year){
       .attr("height", y.bandwidth() )
       .style("fill", function(d) { return myColor(d.value)} )
 
+     // var yearDataValues = yearData.values.map(function(a){return + a.value} );
+     // var uniqueValues = [... new Set(yearDataValues)];
+     // uniqueValues.sort(sortNumber);
+     // console.log("uniqueValues", uniqueValues);
 
-      console.log(yearData.values);
+     var legendValues = [];
+     var dmax = d3.max(yearData.values, function(a){return +a.value});
 
-  // var legend = svg.append("g")
-  //           .attr("class", "legend")
-  //           .attr("transform", "translate(0,-300)")
-  //           .selectAll(".legendElement")
-  //           .data([0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
-  //           .enter().append("g")
-  //           .attr("class", "legendElement");
+     for (var i = 0; i <= dmax; i+=5) {
+        legendValues.push(i);
+       }
+
+   var legend = svg.append("g")
+    .attr("transform", "translate(" + ( 30) + 
+        "," + height + ")");
+
+    legendValues.forEach(function(value, i){
+     // console.log(value, i);
+    var legendRow = legend.append("g")
+        .attr("transform", "translate("+ (i * 20) +", " + 30 + ")");
+
+    legendRow.append("rect")
+        .attr("class", "legBelow")
+        .attr("width", 19)
+        .attr("height", 20)
+        .attr("fill", myColor(value));
+
+    legendRow.append("text")
+        .attr("class", "legBelow")
+        .attr("x", 20)
+        .attr("y", 30)
+        .attr("text-anchor", "end")
+        .style("text-transform", "capitalize")
+        .text(value);
+});
+
+
 
 
 }
@@ -179,16 +219,66 @@ drawHmap(years[currentYearIndex]);
 
 var updateHmap = function(year){
 
-  console.log(years[currentYearIndex], year);
+  //console.log(years[currentYearIndex], year);
 
   var yearData = nest.find(function(d){return d.key == year;});
-  console.log(yearData);
+ // console.log(yearData);
+
+  var myColor = d3.scaleLinear()
+  .range(["#efe1ef", "#bf06e0"])
+  .domain([1,d3.max(yearData.values,function(d) { return d.value; })]);
+
+
+    var legendValues = [];
+     var dmax = d3.max(yearData.values, function(a){return +a.value});
+
+     for (var i = 0; i <= dmax; i+=5) {
+        legendValues.push(i);
+       }
+
+
   var heatmap = svg.selectAll(".sqr")
       .data(yearData.values, function(d) {return d["Crime Type"]+':'+d["Borough"];})
       .transition()
       .duration(500)
       .style("fill", function(d) { return myColor(d.value)} )
+
+
+
+      svg.selectAll("rect.legBelow").remove();
+      svg.selectAll("text.legBelow").remove();
+     var legend = svg.append("g")
+    .attr("transform", "translate(" + ( 30) + 
+        "," + height + ")");
+
+    legendValues.forEach(function(value, i){
+      //console.log(value, i);
+    var legendRow = legend.append("g")
+        .attr("transform", "translate("+ (i * 20) +", " + 30 + ")");
+
+    legendRow.append("rect")
+        .attr("class", "legBelow")
+        .attr("width", 19)
+        .attr("height", 20)
+        .attr("fill", myColor(value));
+
+    legendRow.append("text")
+        .attr("class", "legBelow")
+        .attr("x", 20)
+        .attr("y", 30)
+        .attr("text-anchor", "end")
+        .style("text-transform", "capitalize")
+        .text(value);
+});
+
+
+
 }
+
+
+
+
+
 
     yearMenu.on("change", function() {
       // find which year selected from the dropdown

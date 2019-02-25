@@ -11,7 +11,6 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default"></nav>
     <svg width="960" height="600"></svg>
 
 <script src="../lib/d3.v5.min.js"></script>
@@ -69,19 +68,50 @@
       .select(".domain")
         .remove();
 
+    var countyData = {};
 
     var promises = [
       d3.json("us.json"),
       d3.csv("county_poverty.csv",  function(d) {
-        //console.log(typeof(d.id));
+        //console.log(d);
+        countyData[d.id] = d;
+        countyData[d.id]["TotalPop"] = 0;
+        countyData[d.id]["IncomePerCap"] =0;
+
+
+
         if (d.id.length < 5){
             d.id = "0"+d.id;
         }
        povertyMap.set(d.id, +d.Poverty); 
-       //console.log(povertyMap);
-      })
+       //console.log(countyData['1001']);
+      }),
 
     ]
+
+ 
+
+ // d3.csv("county_detail.csv",  function(a) {
+ //        //console.log(countyData["36035"]);
+ //        //countyData[a.id]["TotalPop"] = a.TotalPop;
+ //        // countyData[a.id]["IncomePerCap"] = a.IncomePerCap;
+
+ //        console.log(countyData[a.id]);
+
+ //        //console.log(countyData);
+
+ //       })
+      
+      
+
+    
+
+
+
+
+
+
+    //console.log(povertyMap);
 
     Promise.all(promises).then(function(data){
         //console.log(data);
@@ -99,7 +129,9 @@
                 .attr("fill", function(d) { return color(d.Poverty = povertyMap.get(d.id)); })
                 .attr("d", path)
             .append("title")
-                .text(function(d) { return d.Poverty + "%"; });
+                .text(function(d) {
+                //    console.log(d);
+                 return countyData[+d.id].County + "," + countyData[+d.id].State +". Poverty: " + countyData[+d.id].Poverty + "%"; });
 
         svg.append("path")
             .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
